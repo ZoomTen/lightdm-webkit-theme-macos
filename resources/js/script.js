@@ -187,7 +187,7 @@ function initialize() {
 }
 
 function on_image_error(e) {
-  e.currentTarget.src = "img/avatar.svg";
+  e.currentTarget.src = "resources/img/avatar.svg";
 }
 
 function initialize_users() {
@@ -207,7 +207,7 @@ function initialize_users() {
       image.src = user.image;
       image.onerror = on_image_error;
     } else {
-      image.src = "img/avatar.svg";
+      image.src = "resources/img/avatar.svg";
     }
 
     userNode.id = user.name;

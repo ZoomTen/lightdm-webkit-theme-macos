@@ -1,6 +1,6 @@
 [theme]
-name=Macbuntu-y
-description=Macbuntu-y logon
+name=macOS-lightdm
+description=macOS-esque login screen
 engine=lightdm-webkit-greeter
 url=index.html
 session=xfce

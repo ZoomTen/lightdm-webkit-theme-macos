@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ArilloUI';
-    src: url('font/Arillo_UI_Regular.ttf') format('truetype');
+    src: url('resources/font/Arillo_UI_Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@ cursor: default;
 
 body {
   background-color: #222;
-  /*background: url('logon.png');*/ /* to add script */
+  /*background: url('resources/img/logon.png');*/ /* todo: add script */
   -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
