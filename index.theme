@@ -1,0 +1,6 @@
+[theme]
+name=Macbuntu-y
+description=Macbuntu-y logon
+engine=lightdm-webkit-greeter
+url=index.html
+session=xfce
