@@ -8,11 +8,12 @@
 
 * {
   font: normal 100% "ArilloUI";
+  font-family: Arial, Helvetica, 'ArilloUI', sans-serif;
 cursor: default;
 }
 
 body {
-  background-color: #222;
+  background-color: #4c4c4c;
   /*background: url('resources/img/logon.png');*/ /* todo: add script */
   -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -23,7 +24,7 @@ body {
   width: 100%;
   margin: 0;
 
-  font-size: 11pt;
+  font-size: 10pt;
   color:white;
 }
 
@@ -35,7 +36,7 @@ input {
   border: none;
   border-radius: 4px;
   padding: 6px;
-  background: rgba(100,100,100,0.3);
+  background: rgba(255,255,255,0.16);
   color:white;
 }
 
@@ -45,9 +46,6 @@ a {
 
 .smooth {
   -webkit-transition: visibility 0s, opacity 0.3s, left 0.4s;
-}
-.passsmooth {
-  -webkit-transition: visibility 0s, opacity 0.4s, top 0.3s ease-out;
 }
 
 .hidden {
@@ -60,7 +58,6 @@ a {
   opacity: 0;
   visibility: hidden;
   position:relative;
-  top:-20px !important;
 }
 
 .center {
@@ -69,13 +66,10 @@ a {
 
 .pass{
   position:relative;
-  top: 0;
+  top: 4px;
   text-align: center;
 }
 
-.button {
-  cursor: pointer;
-}
 
 .footer {
   position: fixed;
@@ -105,7 +99,7 @@ float: left;
 
 .login_content {
   display: table-row;
-  top: -20px;
+  top: -102px;
   position: relative;
 }
 
@@ -116,7 +110,6 @@ float: left;
 
 #message {
   display: table-row;
-  height: 80px;
   -webkit-transition: visibility 0s, opacity 0.3s, height 0.3s;
 }
 
@@ -147,25 +140,24 @@ float: left;
 }
 
 .user_image_wrapper {
-  width: 80px;
-  height: 80px;
-
   border-radius: 80px;
   border: 2px solid #fff;
   -webkit-transition: all 0.3s ease-in-out;
+  margin:10px;
 }
 
 .user_image {
-  width: 80px;
-  height: 80px;
   border-radius: 60px;
-cursor: pointer !important;
+}
+
+.user_image, .user_image_wrapper{
+    width: 64px;
+    height: 64px;
 }
 
 .user_name {
   display: block;
-  margin-top: 15px;
-cursor: pointer !important;
+  margin-top: 20px;
 
 }
 
@@ -177,9 +169,9 @@ cursor: pointer !important;
 }
 
 .action_image {
-  height: 50px;
-  margin-bottom: 12px;
-cursor: pointer !important;
+  width: 32px;
+  height: 36px;
+  margin-bottom: 9px;
 }
 
 .action_label {
