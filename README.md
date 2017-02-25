@@ -2,7 +2,7 @@
 LightDM Webkit (&amp; WebKit2) greeter theme which is deliberately made to be macOS-esque.
 
 ##Source
-This LightDM webkit greeter theme is based on [LightDM-Webkit-MacOSX-Theme](https://github.com/Wattos/LightDM-Webkit-MacOSX-Theme), with the visuals changed to look more like the more recent ones.
+This LightDM webkit greeter theme is based on [LightDM-Webkit-MacOSX-Theme](https://github.com/Wattos/LightDM-Webkit-MacOSX-Theme), with the visuals changed to approximate the more recent releases of macOS.
 
 It can be applied on pretty much any Linux distro which includes LightDM and the WebKit / WebKit2 greeter either in the repositories or installed with distro.
 
@@ -33,8 +33,22 @@ Enjoy your aesthetic login screen :D
 
 ##Modifications
 Among the modifications I've made include:
-  * Restyled svg icons
-  * Updated style
-  * Added clock and title on header
-  * A new font (based on Liberation Sans)
-  * Added movement to password
+ - Restyled svg icons
+ - Updated style
+ - Added clock and title on header
+ - A new font (based on Liberation Sans)
+
+##Customizing
+###Text on the greeter###
+To add your own text, like "Welcome to your computer", you can open `index.html` in a text editor and modifying line 10, e.g.
+
+    <div class="headertext"></div> <!-- you can change this to whatever -->
+to
+
+    <div class="headertext">Welcome to your computer</div>
+
+###Custom background###
+Simply replace `logon.png` in the `resources/img/` folder with a background of your choice. A sample background (made by me) is included.
+
+##Demo
+A demo of this theme can be viewed [here](https://zoomten.github.io/lightdm/macos/index.html)

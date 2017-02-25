@@ -14,11 +14,9 @@ cursor: default;
 
 body {
   background-color: #4c4c4c;
-  /*background: url('resources/img/logon.png');*/ /* todo: add script */
+  background: url('resources/img/logon.png');
   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background-size: cover;
   display: table;
   height: 100%;
   width: 100%;
@@ -26,6 +24,14 @@ body {
 
   font-size: 10pt;
   color:white;
+}
+
+.cover{
+  width:100%;
+  height:100%;
+  background:rgba(76,76,76,0.65);
+  position: absolute;
+  z-index:-1;
 }
 
 body, span, div, img {
@@ -37,7 +43,7 @@ input {
   border-radius: 4px;
   padding: 6px;
   background: rgba(255,255,255,0.16);
-  color:white;
+  color:rgba(255,255,255,0.82);
 }
 
 a {
@@ -56,8 +62,11 @@ a {
 
 .passhidden {
   opacity: 0;
-  visibility: hidden;
   position:relative;
+}
+
+.passsmooth {
+  -webkit-transition: opacity 0.1s;
 }
 
 .center {
@@ -111,6 +120,7 @@ float: left;
 #message {
   display: table-row;
   -webkit-transition: visibility 0s, opacity 0.3s, height 0.3s;
+  height: 130px;
 }
 
 #message.hidden {
@@ -124,7 +134,7 @@ float: left;
 }
 
 #message_content.error {
-  color: #F55;
+  color: #FFF;
 }
 
 .user {
