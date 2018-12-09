@@ -14,7 +14,7 @@ cursor: default;
 
 body {
   background-color: #4c4c4c;
-  background: url('resources/img/logon.png');
+  background: url('../img/logon.png');
   -webkit-background-size: cover;
   background-size: cover;
   display: table;
